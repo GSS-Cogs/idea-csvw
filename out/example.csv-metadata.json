@@ -1,0 +1,160 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en"
+    }
+  ],
+  "tables": [
+    {
+      "url": "example.csv",
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "month",
+            "titles": [
+              "Month"
+            ],
+            "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+            "valueUrl": "http://reference.data.gov.uk/id/{month}"
+          },
+          {
+            "name": "country",
+            "titles": [
+              "Country"
+            ],
+            "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+            "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/{country}"
+          },
+          {
+            "name": "value",
+            "titles": [
+              "Value"
+            ],
+            "datatype": "double",
+            "propertyUrl": "http://gss-data.org.uk/def/measure/weight"
+          },
+          {
+            "name": "marker",
+            "titles": [
+              "Marker"
+            ],
+            "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus",
+            "valueUrl": "http://gss-data.org.uk/def/concept/cogs-markers/{marker}"
+          },
+          {
+            "name": "virtual_measure",
+            "virtual": true,
+            "propertyUrl": "http://purl.org/linked-data/cube#measureType",
+            "valueUrl": "http://gss-data.org.uk/def/measure/weight"
+          },
+          {
+            "name": "virtual_dataset",
+            "virtual": true,
+            "propertyUrl": "http://purl.org/linked-data/cube#dataSet",
+            "valueUrl": "http://gss-data.org.uk/data/this-dataset-name#dataset"
+          },
+          {
+            "name": "virtual_type",
+            "virtual": true,
+            "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "valueUrl": "http://purl.org/linked-data/cube#Observation"
+          }
+        ],
+        "primaryKey": [
+          "month",
+          "country"
+        ],
+        "foreignKeys": [],
+        "aboutUrl": "http://gss-data.org.uk/data/this-dataset-name/{month}/{country}"
+      }
+    }
+  ],
+  "@id": "http://gss-data.org.uk/data/this-dataset-name#tables",
+  "prov:hadDerivation": {
+    "@id": "http://gss-data.org.uk/data/this-dataset-name#dataset",
+    "@type": [
+      "qb:DataSet",
+      "dcat:Dataset"
+    ],
+    "qb:structure": {
+      "@id": "http://gss-data.org.uk/data/this-dataset-name#structure",
+      "@type": "qb:DataStructureDefinition",
+      "qb:component": [
+        {
+          "@id": "http://gss-data.org.uk/data/this-dataset-name#component/month",
+          "qb:dimension": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+            "@type": "qb:DimensionProperty",
+            "rdfs:range": {
+              "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+            },
+            "rdfs:label": "Month"
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+          }
+        },
+        {
+          "@id": "http://gss-data.org.uk/data/this-dataset-name#component/country",
+          "qb:dimension": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+            "@type": "qb:DimensionProperty",
+            "rdfs:range": {
+              "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+            },
+            "rdfs:label": "Country"
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+          }
+        },
+        {
+          "@id": "http://gss-data.org.uk/data/this-dataset-name#component/measure-type",
+          "qb:dimension": {
+            "@id": "http://purl.org/linked-data/cube#measureType",
+            "@type": "qb:DimensionProperty",
+            "rdfs:range": {
+              "@id": "http://purl.org/linked-data/cube#MeasureProperty"
+            }
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://purl.org/linked-data/cube#measureType"
+          }
+        },
+        {
+          "@id": "http://gss-data.org.uk/data/this-dataset-name#component/value",
+          "qb:measure": {
+            "@id": "http://gss-data.org.uk/def/measure/weight",
+            "@type": "qb:MeasureProperty",
+            "rdfs:range": {
+              "@id": "http://www.w3.org/2001/XMLSchema#double"
+            },
+            "rdfs:label": "Value"
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://gss-data.org.uk/def/measure/weight"
+          }
+        },
+        {
+          "@id": "http://gss-data.org.uk/data/this-dataset-name#component/marker",
+          "qb:attribute": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus",
+            "@type": "qb:AttributeProperty",
+            "rdfs:range": {
+              "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+            }
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus"
+          }
+        }
+      ]
+    }
+  }
+}

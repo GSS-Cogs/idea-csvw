@@ -1,0 +1,164 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en"
+    }
+  ],
+  "tables": [
+    {
+      "url": "life-expectancy.csv",
+      "tableSchema": {
+        "columns": [
+          {
+            "name": "life_expectancy",
+            "titles": [
+              "Life Expectancy"
+            ],
+            "datatype": "http://www.w3.org/2001/XMLSchema#decimal",
+            "propertyUrl": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#measure/life-expectancy"
+          },
+          {
+            "name": "region",
+            "titles": [
+              "Region"
+            ],
+            "propertyUrl": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dimension/region"
+          },
+          {
+            "name": "sex",
+            "titles": [
+              "Sex"
+            ],
+            "propertyUrl": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dimension/sex"
+          },
+          {
+            "name": "period",
+            "titles": [
+              "Period"
+            ],
+            "propertyUrl": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dimension/period"
+          },
+          {
+            "name": "virtual_measure",
+            "virtual": true,
+            "propertyUrl": "http://purl.org/linked-data/cube#measureType",
+            "valueUrl": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#measure/life-expectancy"
+          },
+          {
+            "name": "virtual_dataset",
+            "virtual": true,
+            "propertyUrl": "http://purl.org/linked-data/cube#dataSet",
+            "valueUrl": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dataset"
+          },
+          {
+            "name": "virtual_type",
+            "virtual": true,
+            "propertyUrl": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "valueUrl": "http://purl.org/linked-data/cube#Observation"
+          }
+        ],
+        "primaryKey": [
+          "region",
+          "sex",
+          "period"
+        ],
+        "foreignKeys": [],
+        "aboutUrl": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales/{region}/{sex}/{period}"
+      }
+    }
+  ],
+  "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#tables",
+  "prov:hadDerivation": {
+    "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dataset",
+    "@type": [
+      "qb:DataSet",
+      "dcat:Dataset"
+    ],
+    "dcterms:title": "Life Expectancy in Wales",
+    "dcterms:description": "A human readable description.",
+    "dcterms:publisher": "Statistics Wales",
+    "dcterms:issued": "2020-05-12",
+    "dcat:landingPage": "https://www.gov.uk/government/collections/life-expectancy-in-wales",
+    "qb:structure": {
+      "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#structure",
+      "@type": "qb:DataStructureDefinition",
+      "qb:component": [
+        {
+          "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#component/measure-type",
+          "qb:dimension": {
+            "@id": "http://purl.org/linked-data/cube#measureType",
+            "@type": "qb:DimensionProperty",
+            "rdfs:range": {
+              "@id": "http://purl.org/linked-data/cube#MeasureProperty"
+            }
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://purl.org/linked-data/cube#measureType"
+          }
+        },
+        {
+          "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#component/life-expectancy",
+          "qb:measure": {
+            "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#measure/life-expectancy",
+            "@type": "qb:MeasureProperty",
+            "rdfs:range": {
+              "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+            },
+            "rdfs:label": "Life Expectancy"
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#measure/life-expectancy"
+          }
+        },
+        {
+          "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#component/region",
+          "qb:dimension": {
+            "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dimension/region",
+            "@type": "qb:DimensionProperty",
+            "rdfs:range": {
+              "@id": "https://www.w3.org/2000/01/rdf-schema#Resource"
+            },
+            "rdfs:label": "Region"
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dimension/region"
+          }
+        },
+        {
+          "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#component/sex",
+          "qb:dimension": {
+            "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dimension/sex",
+            "@type": "qb:DimensionProperty",
+            "rdfs:range": {
+              "@id": "https://www.w3.org/2000/01/rdf-schema#Resource"
+            },
+            "rdfs:label": "Sex"
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dimension/sex"
+          }
+        },
+        {
+          "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#component/period",
+          "qb:dimension": {
+            "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dimension/period",
+            "@type": "qb:DimensionProperty",
+            "rdfs:range": {
+              "@id": "https://www.w3.org/2000/01/rdf-schema#Resource"
+            },
+            "rdfs:label": "Period"
+          },
+          "@type": "qb:ComponentSpecification",
+          "qb:componentProperty": {
+            "@id": "http://gss-data.org.uk/data/gss_data/life-expectancy-in-wales#dimension/period"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "title": "Life Expectancy in Wales",
+    "publisher": "Statistics Wales",
+    "description": "A human readable description.",
+    "derived_from": "https://www.gov.uk/government/collections/life-expectancy-in-wales",
+    "contact": "ross.bowen@ons.gov.uk",
+    "published": "2020-05-12",
+    "themes": [
+        "Health"
+    ],
+    "csv_filename": "life-expectancy.csv",
+    "dataset_id": "life-expectancy-in-wales", 
+    "columns": [
+        {
+            "title": "Life Expectancy",                       
+            "name": "life_expectancy",                        
+            "component_type": "measure"
+        },
+        {
+            "title": "Region",            
+            "name": "region",             
+            "component_type": "dimension"
+        },
+        {
+            "title": "Sex",            
+            "name": "sex",             
+            "component_type": "dimension"
+        },
+        {
+            "title": "Period",            
+            "name": "period",             
+            "component_type": "dimension"
+        }
+    ]
+}

@@ -1,0 +1,1944 @@
+
+<http://gss-data.org.uk/data/this-dataset-name#tables> <http://www.w3.org/ns/prov#hadDerivation>
+    <http://gss-data.org.uk/data/this-dataset-name#dataset> .
+
+<http://gss-data.org.uk/data/this-dataset-name#dataset> a <http://purl.org/linked-data/cube#DataSet>,
+    <http://www.w3.org/ns/dcat#Dataset>;
+  <http://purl.org/linked-data/cube#structure> <http://gss-data.org.uk/data/this-dataset-name#structure> .
+
+<http://gss-data.org.uk/data/this-dataset-name#structure> a <http://purl.org/linked-data/cube#DataStructureDefinition>;
+  <http://purl.org/linked-data/cube#component> <http://gss-data.org.uk/data/this-dataset-name#component/country>,
+    <http://gss-data.org.uk/data/this-dataset-name#component/marker>, <http://gss-data.org.uk/data/this-dataset-name#component/measure-type>,
+    <http://gss-data.org.uk/data/this-dataset-name#component/month>, <http://gss-data.org.uk/data/this-dataset-name#component/value> .
+
+<http://gss-data.org.uk/data/this-dataset-name#component/month> a <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod>;
+  <http://purl.org/linked-data/cube#dimension> <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> .
+
+<http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> a <http://purl.org/linked-data/cube#DimensionProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Month"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://gss-data.org.uk/data/this-dataset-name#component/country> a <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://purl.org/linked-data/sdmx/2009/dimension#refArea>;
+  <http://purl.org/linked-data/cube#dimension> <http://purl.org/linked-data/sdmx/2009/dimension#refArea> .
+
+<http://purl.org/linked-data/sdmx/2009/dimension#refArea> a <http://purl.org/linked-data/cube#DimensionProperty>;
+  <http://purl.org/linked-data/cube#codeList> "false"@en;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://gss-data.org.uk/data/this-dataset-name#class/Country> .
+
+<http://gss-data.org.uk/data/this-dataset-name#component/measure-type> a <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://purl.org/linked-data/cube#measureType>;
+  <http://purl.org/linked-data/cube#dimension> <http://purl.org/linked-data/cube#measureType> .
+
+<http://purl.org/linked-data/cube#measureType> a <http://purl.org/linked-data/cube#DimensionProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/linked-data/cube#MeasureProperty> .
+
+<http://gss-data.org.uk/data/this-dataset-name#component/value> a <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/cube#measure> <http://gss-data.org.uk/def/measure/weight> .
+
+<http://gss-data.org.uk/def/measure/weight> a <http://purl.org/linked-data/cube#MeasureProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Value"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+
+<http://gss-data.org.uk/data/this-dataset-name#component/marker> a <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#attribute> <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> .
+
+<http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> a <http://purl.org/linked-data/cube#AttributeProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/u10m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/u10m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/u10m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/u10m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "u10m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/10-12m/all>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/10-12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/10-12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/10-12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "10-12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/o12m/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/o12m/demersal>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "demersal";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/o12m/pelagic>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "pelagic";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/o12m/shellfish>
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "o12m";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "shellfish";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>,
+    <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/all/all> a
+    <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/def/measure/weight> "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/all/all> <http://gss-data.org.uk/def/measure/weight>
+    "all";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/K02000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/K02000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/K02000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/E92000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/E92000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/E92000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/N07000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/N07000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/N07000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/S04000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/S04000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/S04000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/12-15m/all>
+  <http://gss-data.org.uk/def/measure/weight> "12-15m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/15-24m/all>
+  <http://gss-data.org.uk/def/measure/weight> "15-24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2019-07/W08000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2019-07> .
+
+<http://gss-data.org.uk/data/this-dataset-name/month/2020-07/W08000001/o24m/all> <http://gss-data.org.uk/def/measure/weight>
+    "o24m";
+  a <http://purl.org/linked-data/cube#Observation>;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/this-dataset-name#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/def/measure/weight>;
+  <http://purl.org/linked-data/sdmx/2009/attribute#obsStatus> "all";
+  <http://purl.org/linked-data/sdmx/2009/dimension#refArea> <http://statistics.data.gov.uk/id/statistical-geography/W08000001>;
+  <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> <http://reference.data.gov.uk/id/month/2020-07> .

@@ -1,0 +1,244 @@
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#tables> <http://www.w3.org/ns/prov#hadDerivation>
+    <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#dataset> a <http://purl.org/linked-data/cube#DataSet>,
+    <http://www.w3.org/ns/dcat#Dataset>;
+  <http://purl.org/linked-data/cube#structure> <http://gss-data.org.uk/data/life-expectancy-in-wales#structure> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#structure> a <http://purl.org/linked-data/cube#DataStructureDefinition>;
+  <http://purl.org/linked-data/cube#component> <http://gss-data.org.uk/data/life-expectancy-in-wales#component/life-expectancy>,
+    <http://gss-data.org.uk/data/life-expectancy-in-wales#component/measure-type>, <http://gss-data.org.uk/data/life-expectancy-in-wales#component/period>,
+    <http://gss-data.org.uk/data/life-expectancy-in-wales#component/region>, <http://gss-data.org.uk/data/life-expectancy-in-wales#component/sex> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#component/measure-type> a <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://purl.org/linked-data/cube#measureType>;
+  <http://purl.org/linked-data/cube#dimension> <http://purl.org/linked-data/cube#measureType> .
+
+<http://purl.org/linked-data/cube#measureType> a <http://purl.org/linked-data/cube#DimensionProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/linked-data/cube#MeasureProperty> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#component/life-expectancy> a
+    <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy>;
+  <http://purl.org/linked-data/cube#measure> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> a <http://purl.org/linked-data/cube#MeasureProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Life Expectancy"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#component/region> a <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region>;
+  <http://purl.org/linked-data/cube#dimension> <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> a <http://purl.org/linked-data/cube#DimensionProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#component/sex> a <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex>;
+  <http://purl.org/linked-data/cube#dimension> <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> a <http://purl.org/linked-data/cube#DimensionProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Sex"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#component/period> a <http://purl.org/linked-data/cube#ComponentSpecification>;
+  <http://purl.org/linked-data/cube#componentProperty> <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period>;
+  <http://purl.org/linked-data/cube#dimension> <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> a <http://purl.org/linked-data/cube#DimensionProperty>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Period"@en;
+  <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2000/01/rdf-schema#Resource> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000022/M/2004> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2004";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000022>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 76.7;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000022/F/2004> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2004";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000022>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 80.7;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000022/M/2005> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2005";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000022>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 77.1;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000022/F/2005> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2005";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000022>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 80.9;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000022/M/2006> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2006";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000022>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 77.0;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000022/F/2006> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2006";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000022>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 81.5;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000015/M/2004> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2004";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000015>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 78.7;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000015/F/2004> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2004";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000015>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 83.3;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000015/M/2005> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2005";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000015>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 78.6;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000015/F/2005> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2005";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000015>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 83.7;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000015/M/2006> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2006";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000015>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 78.7;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000015/F/2006> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2006";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000015>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 83.4;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000021/M/2004> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2004";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000021>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 76.6;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000021/F/2004> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2004";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000021>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 81.3;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000021/M/2005> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2005";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000021>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 76.5;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000021/F/2005> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2005";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000021>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 81.5;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000021/M/2006> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2006";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000021>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 76.6;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000021/F/2006> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2006";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000021>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 81.7;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000024/M/2004> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2004";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000024>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 75.5;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000024/F/2004> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2004";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000024>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 79.1;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000024/M/2005> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2005";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000024>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 75.5;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000024/F/2005> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2005";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000024>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 79.4;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000024/M/2006> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2006";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000024>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "M";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 74.9;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .
+
+<http://gss-data.org.uk/data/life-expectancy-in-wales/W06000024/F/2006> a <http://purl.org/linked-data/cube#Observation>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/period> "2006";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/region> <http://statistics.data.gov.uk/id/statistical-geography/W06000024>;
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#dimension/sex> "F";
+  <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> 79.6;
+  <http://purl.org/linked-data/cube#dataSet> <http://gss-data.org.uk/data/life-expectancy-in-wales#dataset>;
+  <http://purl.org/linked-data/cube#measureType> <http://gss-data.org.uk/data/life-expectancy-in-wales#measure/life-expectancy> .

@@ -1,0 +1,41 @@
+{
+    "title": "Ad hoc statistical release: UK Sea Fisheries Statistics",
+    "publisher": "Marine Management Organisation",
+    "description": "Published in response to the COVID-19 pandemic to provide timely evidence on impacts on commercial sea fishing activity",
+    "landing_page": "https://www.gov.uk/government/collections/ad-hoc-statistical-releases-sea-fisheries-statistics",
+    "dataset_uri": "http://gss-data.org.uk/data/this-dataset-name",
+    "csv_filename": "example.csv",
+    "columns": [
+        {
+            "title": "Month",
+            "name": "month",
+            "component_type": "dimension",
+            "component_uri": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+            "value_uri": "http://reference.data.gov.uk/id/{month}",
+            "codelist": false
+        },
+        {
+            "title": "Country",
+            "name": "country",   
+            "component_type": "dimension",         
+            "component_uri": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+            "value_uri": "http://statistics.data.gov.uk/id/statistical-geography/{country}",
+            "codelist": false
+        },
+        {
+            "title": "Value",
+            "name": "value",
+            "component_type": "measure",
+            "component_uri": "http://gss-data.org.uk/def/measure/weight",
+            "unit_uri": "http://gss-data.org.uk/def/concept/measurement-units/tonnes",
+            "datatype": "double"
+        },
+        {
+            "title": "Marker",
+            "name": "marker",
+            "component_type": "attribute",
+            "component_uri": "http://purl.org/linked-data/sdmx/2009/attribute#obsStatus",
+            "value_uri": "http://gss-data.org.uk/def/concept/cogs-markers/{marker}"
+        }
+    ]
+}
